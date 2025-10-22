@@ -1,0 +1,874 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MR6IX HUB - Download Premium Music | Juice WRLD, Drake, Nicki Minaj, Wizkid</title>
+    <meta name="description" content="Download premium music from top artists including Juice WRLD, Drake, Nicki Minaj, and Wizkid. High-quality MP3 downloads with instant access.">
+    <meta name="keywords" content="music download, Juice WRLD, Drake, Nicki Minaj, Wizkid, free music, MP3 download">
+     <link rel="icon" type="image/png" href="./assets/img/music.png">
+    <link rel="stylesheet" href="./style.css">
+   
+    <style>
+        
+    </style>
+</head>
+<body>
+    <header>
+        <div class="header-wrapper">
+           <!-- logopart -->
+            <div>
+                <p class="logo">🎶︎ MR6IX HUB</p>
+            </div>
+            <div class="search"> 
+    <span>🔍︎</span>
+    <div class="search-icon-wrapper">
+        <input type="text" placeholder="Search for Music,Artist,Album........" class="search-icon" id="searchInputDesktop" autocomplete="off">
+    </div>
+    
+    <!--  Suggestions dropdown for desktop -->
+    <div class="search-suggestions-dropdown" id="searchSuggestionsDesktop"></div>
+    <div class="search-no-results-msg" id="noResultsDesktop" style="display: none;">
+        <span>🔍︎</span>
+        <p>No results found</p>
+    </div>
+</div>
+
+               <div class="header-info-wrapper">
+                    <div class="header-info-div">
+                      <a href="#homePage" class="info-link">Home</a>
+                      <a href="#artistPage" class="info-link">Artist</a>
+                      <a href="#newsPage" class="info-link">News</a>
+                      <a href="#trendingPage" class="info-link">Trending</a>
+                    </div>
+                </div>
+
+                    <div class="hamburger-wrapper">
+                        <button class="hamburger">
+                          ☰
+                        </button>
+                    </div>
+                
+                <div class="btn-wrap">
+                    <button class="btn">
+                        🔔︎
+                    </button>
+                    <div class="notification">4</div>
+                </div>
+        </div>
+
+            <!-- Mobile Search -->
+<div class="search-mobile"> 
+    <span>🔍︎</span>
+    <div class="search-icon-wrapper-mobile">
+        <input type="text" placeholder="Search for Music,Artist,Album........" class="search-icon-mobile" id="searchInputMobile" autocomplete="off">
+    </div>
+    
+    <!--Suggestions dropdown for mobile -->
+    <div class="search-suggestions-dropdown" id="searchSuggestionsMobile"></div>
+    <div class="search-no-results-msg" id="noResultsMobile" style="display: none;">
+        <span>🔍︎</span>
+        <p>No results found</p>
+    </div>
+</div>
+
+    </header>
+
+
+    <!-- Mobile Menu Overlay (Only shows on mobile) -->
+<div class="mobile-menu-overlay" id="mobileMenuOverlay">
+    <button class="mobile-menu-close" id="mobileMenuClose">✕</button>
+    <div class="mobile-menu-content">
+        <a href="#homePage" class="mobile-menu-link">Home</a>
+        <a href="#artistPage" class="mobile-menu-link">Artist</a>
+        <a href="#newsPage" class="mobile-menu-link">News</a>
+        <a href="#trendingPage" class="mobile-menu-link">Trending</a>
+    </div>
+</div>
+<!-- Hero Section -->
+<section class="hero-section" id="homePage">
+    <div class="hero-particles" id="heroParticles"></div>
+    
+    <div class="hero-content">
+        <div class="hero-text">
+            <h1 class="hero-title">Download Your Favorite Music</h1>
+            <p class="hero-subtitle">
+                <span class="typing-text" id="typingText"></span>
+                <span class="cursor">|</span>
+            </p>
+            <div class="hero-buttons">
+                <a class="hero-btn primary" href="#artistPage">
+                    <span>Explore Music</span>
+                    <span class="btn-icon">🎵︎</span>
+                </a>
+                <a class="hero-btn secondary" href="#trendingPage">
+                    <span>Top Charts</span>
+                    <span class="btn-icon">→</span>
+                </a>
+            </div>
+        </div>
+
+        <!-- Floating Artist Cards -->
+        <div class="artist-cards-hero">
+            <div class="artist-card-hero" data-aos="fade-up" data-delay="0">
+                <div class="artist-image-placeholder">
+                    
+                     <img src="./assets/img/download.jpg" alt="Drake" class="artist-hero-img">
+                    <div class="artist-overlay">Drake</div>
+                </div>
+            </div>
+
+            <div class="artist-card-hero" data-aos="fade-up" data-delay="100">
+                <div class="artist-image-placeholder">
+                    
+                    <img src="./assets/img/download (1).jpg" alt="JUice Wrld" class="artist-hero-img">
+                    <div class="artist-overlay">Juice WRLD</div>
+                </div>
+            </div>
+
+            <div class="artist-card-hero" data-aos="fade-up" data-delay="200">
+                <div class="artist-image-placeholder">
+                    
+                    <img src="./assets/img/download (2).jpg" alt="Nicki Minaj" class="artist-hero-img">
+                    <div class="artist-overlay">Nicki Minaj</div>
+                </div>
+            </div>
+
+            <div class="artist-card-hero" data-aos="fade-up" data-delay="300">
+                <div class="artist-image-placeholder">
+                    
+                    <img src="./assets/img/download (3).jpg" alt="Wizkid" class="artist-hero-img">
+                    <div class="artist-overlay">Wizkid</div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Stats Counter -->
+        <div class="hero-stats">
+            <div class="stat-item">
+                <div class="stat-icon">📊︎</div>
+                <div class="stat-number" data-target="50000">0</div>
+                <div class="stat-label">Downloads</div>
+            </div>
+            <div class="stat-item">
+                <div class="stat-icon">⭐︎</div>
+                <div class="stat-number" data-target="4.8">0</div>
+                <div class="stat-label">Rating</div>
+            </div>
+            <div class="stat-item">
+                <div class="stat-icon">🎵︎</div>
+                <div class="stat-number" data-target="1000">0</div>
+                <div class="stat-label">Songs</div>
+            </div>
+            <div class="stat-item">
+                <div class="stat-icon">👥︎</div>
+                <div class="stat-number" data-target="10000">0</div>
+                <div class="stat-label">Online Users</div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+
+
+
+
+
+
+<section id="trendingPage">
+    <!-- Trending Music Section -->
+<section class="trending-section" id="trending">
+    <div class="trending-container">
+        <!-- Section Header -->
+        <div class="trending-header scroll-reveal-left">
+            <h2 class="section-title-main">🔥 Trending Now</h2>
+            <p class="section-subtitle">Top hits everyone is vibing to right now</p>
+        </div>
+
+        <!-- Music Player Cards -->
+         <div class="music-card" >
+            <div class="music-grid" id="musicGrid">
+            <!-- Song 1 -->
+            <div class="music-card scroll-reveal-right">
+                <div class="music-cover-wrapper">
+                    <!-- ADD SONG COVER IMAGE HERE -->
+                    <img src="./assets/trending/Herunterladen BAND4BAND Kostenlose Klingeltöne 2024 _ Klingeltone-Kostenlos_de.jpg" alt="Song Cover" class="music-cover">
+                    <div class="play-overlay">
+                        <button class="play-btn">▶</button>
+                    </div>
+                    <audio class="music-audio">
+                        <source src="./assets/treding audio/Central_Cee_-_BAND4BAND_feat_Lil_Baby__@BaseNaija.mp3" type="audio/mpeg">
+                    </audio>
+                    <div class="trending-badge">#1</div>
+                </div>
+                <div class="music-info">
+                    <h3 class="music-title">BAND 4 BAND</h3>
+                    <p class="music-artist">Central Cee & Lil Baby</p>
+                    <div class="music-stats">
+                        <span class="stat">🔥 800M plays</span>
+                        <span class="stat">⭐ 4.9</span>
+                    </div>
+                </div>
+                <div class="music-controls">
+                    <input type="range" min="0" max="100" value="50" class="volume-slider progress-slider ">
+                    <button class="info-btn" data-song="1">Info</button>
+                    <button class="lyrics-btn" data-song="1"> Lyrics</button>
+                    <button class="download-btn-music download-btn" data-audio="assets/treding audio/Central_Cee_-_BAND4BAND_feat_Lil_Baby__@BaseNaija.mp3">⬇ Download</button>
+                </div>
+            </div>
+
+            <!-- Song 2 -->
+            <div class="music-card scroll-reveal-left">
+                <div class="music-cover-wrapper">
+                    <img src="./assets/kendrick/Not Like Us.jpg" alt="Song Cover" class="music-cover">
+                    <div class="play-overlay">
+                        <button class="play-btn">▶</button>
+                    </div>
+                    <audio class="music-audio">
+                        <source src="./assets/treding audio/Kendrick_Lamar_-_Not_Like_Us_@BaseNaija.mp3" type="audio/mpeg">
+                    </audio>
+                    <div class="trending-badge">#2</div>
+                </div>
+                <div class="music-info">
+                    <h3 class="music-title">Not Like Us</h3>
+                    <p class="music-artist">Kendrick Lamar</p>
+                    <div class="music-stats">
+                        <span class="stat">🔥 750M plays</span>
+                        <span class="stat">⭐ 4.7</span>
+                    </div>
+                </div>
+                <div class="music-controls">
+                    <input type="range" min="0" max="100" value="50" class="volume-slider progress-slider ">
+                    <button class="info-btn" data-song="2">Info</button>
+                    <button class="lyrics-btn" data-song="2"> Lyrics</button>
+                    <button class="download-btn-music download-btn" data-audio="assets/treding audio/Kendrick_Lamar_-_Not_Like_Us_@BaseNaija.mp3">⬇ Download</button>
+                </div>
+            </div>
+
+            <!-- Song 3 -->
+            <div class="music-card scroll-reveal-right">
+                <div class="music-cover-wrapper">
+                    <img src="./assets/trending/Drake.jpg" alt="Song Cover" class="music-cover">
+                    <div class="play-overlay">
+                        <button class="play-btn">▶</button>
+                    </div>
+                    <audio class="music-audio">
+                        <source src="./assets/treding audio/Godsplan.mp3" type="audio/mpeg">
+                    </audio>
+                    <div class="trending-badge">#3</div>
+                </div>
+                <div class="music-info">
+                    <h3 class="music-title">God's Plan</h3>
+                    <p class="music-artist">Drake</p>
+                    <div class="music-stats">
+                        <span class="stat">🔥 749M plays</span>
+                        <span class="stat">⭐ 4.9</span>
+                    </div>
+                </div>
+                <div class="music-controls">
+                    <input type="range" min="0" max="100" value="50" class="volume-slider progress-slider ">
+                    <button class="info-btn" data-song="3">Info</button>
+                    <button class="lyrics-btn" data-song="3">Lyrics</button>
+                    <button class="download-btn-music download-btn" data-audio="assets/treding audio/Godsplan.mp3">⬇ Download</button>
+                </div>
+            </div>
+
+            <!-- Song 4 -->
+            <div class="music-card scroll-reveal-left">
+                <div class="music-cover-wrapper">
+                    <img src="./assets/trending/Ordinary - Alex Warren_ Song Lyrics, Music Videos & Concerts.jpg" alt="Song Cover" class="music-cover">
+                    <div class="play-overlay">
+                        <button class="play-btn">▶</button>
+                    </div>
+                    <audio class="music-audio">
+                        <source src="./assets/treding audio/Alex_Warren_-_Ordinary_@BaseNaija.mp3" type="audio/mpeg">
+                    </audio>
+                    <div class="trending-badge">#4</div>
+                </div>
+                <div class="music-info">
+                    <h3 class="music-title">Ordinary</h3>
+                    <p class="music-artist">Alex Warren</p>
+                    <div class="music-stats">
+                        <span class="stat">🔥 730M plays</span>
+                        <span class="stat">⭐ 4.1</span>
+                    </div>
+                </div>
+                <div class="music-controls">
+                    <input type="range" min="0" max="100" value="50" class="volume-slider progress-slider">
+                    <button class="info-btn" data-song="4">Info</button>
+                    <button class="lyrics-btn" data-song="4"> Lyrics</button>
+                    <button class="download-btn-music download-btn" data-audio="assets/treding audio/Alex_Warren_-_Ordinary_@BaseNaija.mp3">⬇ Download</button>
+                </div>
+            </div>
+
+
+
+            
+            <!-- Song 5 -->
+            <div class="music-card scroll-reveal-right">
+                <div class="music-cover-wrapper">
+                    <img src="./assets/trending/esthetische ervaring.jpg" alt="Song Cover" class="music-cover">
+                    <div class="play-overlay">
+                        <button class="play-btn">▶</button>
+                    </div>
+                    <audio class="music-audio">
+                        <source src="./assets/treding audio/Lady Gaga, Bruno Mars - Die With A Smile.mp3" type="audio/mpeg">
+                    </audio>
+                    <div class="trending-badge">#5</div>
+                </div>
+                <div class="music-info">
+                    <h3 class="music-title">Die With a Smile</h3>
+                    <p class="music-artist">Lady Gaga & Bruno Mars</p>
+                    <div class="music-stats">
+                        <span class="stat">🔥 723M plays</span>
+                        <span class="stat">⭐ 4.8</span>
+                    </div>
+                </div>
+                <div class="music-controls">
+                    <input type="range" min="0" max="100" value="50" class="volume-slider progress-slider ">
+                    <button class="info-btn" data-song="5">Info</button>
+                    <button class="lyrics-btn" data-song="5"> Lyrics</button>
+                    <button class="download-btn-music download-btn" data-audio="assets/treding audio/Lady Gaga, Bruno Mars - Die With A Smile.mp3">⬇ Download</button>
+                </div>
+            </div>
+
+
+
+
+
+            
+         <!-- Song 6 -->
+            <div class="music-card scroll-reveal-left">
+                <div class="music-cover-wrapper">
+                    <img src="./assets/trending/New rosé" alt="Song Cover" class="music-cover">
+                    <div class="play-overlay">
+                        <button class="play-btn">▶</button>
+                    </div>
+                    <audio class="music-audio">
+                        <source src="./assets/treding audio/SpotiDown.App - APT. - ROSÉ.mp3" type="audio/mpeg">
+                    </audio>
+                    <div class="trending-badge">#6</div>
+                </div>
+                <div class="music-info">
+                    <h3 class="music-title">APT.</h3>
+                    <p class="music-artist">ROSÉ & Bruno Mars</p>
+                    <div class="music-stats">
+                        <span class="stat">🔥 690M plays</span>
+                        <span class="stat">⭐ 4.5</span>
+                    </div>
+                </div>
+                <div class="music-controls">
+                    <input type="range" min="0" max="100" value="50" class="volume-slider progress-slider ">
+                    <button class="info-btn" data-song="6">Info</button>
+                    <button class="lyrics-btn" data-song="6"> Lyrics</button>
+                    <button class="download-btn-music download-btn" data-audio="assets/treding audio/SpotiDown.App - APT. - ROSÉ.mp3">⬇ Download</button>
+                </div>
+            </div>
+
+            <!-- Hidden Songs (7-12) -->
+            <!-- Song 7 -->
+            <div class="music-card hidden-song scroll-reveal-right">
+                <div class="music-cover-wrapper">
+                    <img src="assets/wizkid/Ayra-Starr-Gimme-Dat-ft.-Wizkid-640x381.jpeg" alt="Song Cover" class="music-cover">
+                    <div class="play-overlay">
+                        <button class="play-btn">▶</button>
+                    </div>
+                    <audio class="music-audio">
+                        <source src="./assets/treding audio/Ayra_Starr_-_Gimme_Dat_feat_Wizkid__@BaseNaija.mp3" type="audio/mpeg">
+                    </audio>
+                    <div class="trending-badge">#7</div>
+                </div>
+                <div class="music-info">
+                    <h3 class="music-title">Gimme Dat</h3>
+                    <p class="music-artist">Ayra Starr & Wizkid</p>
+                    <div class="music-stats">
+                        <span class="stat">🔥 657M plays</span>
+                        <span class="stat">⭐ 4.3</span>
+                    </div>
+                </div>
+                <div class="music-controls">
+                    <input type="range" min="0" max="100" value="50" class="volume-slider progress-slider ">
+                    <button class="info-btn" data-song="7">Info</button>
+                    <button class="lyrics-btn" data-song="7"> Lyrics</button>
+                    <button class="download-btn-music download-btn" data-audio="assets/treding audio/Ayra_Starr_-_Gimme_Dat_feat_Wizkid__@BaseNaija.mp3">⬇ Download</button>
+                </div>
+            </div>
+             <!-- Song 8 -->
+            <div class="music-card hidden-song scroll-reveal-left">
+                <div class="music-cover-wrapper">
+                    <img src="assets/trending/ozeba.jpg" alt="Song Cover" class="music-cover">
+                    <div class="play-overlay">
+                        <button class="play-btn">▶</button>
+                    </div>
+                    <audio class="music-audio">
+                        <source src="./assets/treding audio/Rema_-_OZEBA_@BaseNaija.mp3" type="audio/mpeg">
+                    </audio>
+                    <div class="trending-badge">#8</div>
+                </div>
+                <div class="music-info">
+                    <h3 class="music-title">Ozeba</h3>
+                    <p class="music-artist">Rema</p>
+                    <div class="music-stats">
+                        <span class="stat">🔥 620M plays</span>
+                        <span class="stat">⭐ 4.0</span>
+                    </div>
+                </div>
+                <div class="music-controls">
+                    <input type="range" min="0" max="100" value="50" class="volume-slider progress-slider ">
+                    <button class="info-btn" data-song="8">Info</button>
+                    <button class="lyrics-btn" data-song="8"> Lyrics</button>
+                    <button class="download-btn-music download-btn" data-audio="assets/treding audio/Rema_-_OZEBA_@BaseNaija.mp3">⬇ Download</button>
+                </div>
+            </div>
+
+              <!-- Song 9 -->
+            <div class="music-card hidden-song scroll-reveal-left">
+                <div class="music-cover-wrapper">
+                    <img src="./assets/trending/download.jpg" alt="Song Cover" class="music-cover">
+                    <div class="play-overlay">
+                        <button class="play-btn">▶</button>
+                    </div>
+                    <audio class="music-audio">
+                        <source src="./assets/treding audio/Beyonc_-_TEXAS_HOLD_EM_@BaseNaija.mp3" type="audio/mpeg">
+                    </audio>
+                    <div class="trending-badge">#9</div>
+                </div>
+                <div class="music-info">
+                    <h3 class="music-title">Texas Hold 'Em</h3>
+                    <p class="music-artist">Beyoncé</p>
+                    <div class="music-stats">
+                        <span class="stat">🔥 600M plays</span>
+                        <span class="stat">⭐ 4.8</span>
+                    </div>
+                </div>
+                <div class="music-controls">
+                    <input type="range" min="0" max="100" value="50" class="volume-slider progress-slider ">
+                    <button class="info-btn" data-song="9">Info</button>
+                    <button class="lyrics-btn" data-song="9"> Lyrics</button>
+                    <button class="download-btn-music download-btn" data-audio="assets/treding audio/Beyonc_-_TEXAS_HOLD_EM_@BaseNaija.mp3">⬇ Download</button>
+                </div>
+            </div>
+                   <!-- Song 10 -->
+
+            <div class="music-card hidden-song scroll-reveal-left">
+                <div class="music-cover-wrapper">
+                    <img src="./assets/trending/5ive by Davido on Apple Music.jpg" alt="Song Cover" class="music-cover">
+                    <div class="play-overlay">
+                        <button class="play-btn">▶</button>
+                    </div>
+                    <audio class="music-audio">
+                        <source src="./assets/treding audio/Davido_-_With_You_feat_Omah_Lay__@BaseNaija.mp3" type="audio/mpeg">
+                    </audio>
+                    <div class="trending-badge">#10</div>
+                </div>
+                <div class="music-info">
+                    <h3 class="music-title">With You</h3>
+                    <p class="music-artist">Davido featuring Omah Lay</p>
+                    <div class="music-stats">
+                        <span class="stat">🔥 569M plays</span>
+                        <span class="stat">⭐ 4.2</span>
+                    </div>
+                </div>
+                <div class="music-controls">
+                    <input type="range" min="0" max="100" value="50" class="volume-slider progress-slider ">
+                    <button class="info-btn" data-song="10">Info</button>
+                    <button class="lyrics-btn" data-song="10"> Lyrics</button>
+                    <button class="download-btn-music download-btn" data-audio="assets/treding audio/Davido_-_With_You_feat_Omah_Lay__@BaseNaija.mp3">⬇ Download</button>
+                </div>
+            </div>
+
+
+              <!-- Song 11 -->
+        <div class="music-card hidden-song scroll-reveal-left">
+                <div class="music-cover-wrapper">
+                    <img src="assets/trending/rebel heart.jpg" alt="Song Cover" class="music-cover">
+                    <div class="play-overlay">
+                        <button class="play-btn">▶</button>
+                    </div>
+                    <audio class="music-audio">
+                        <source src="./assets/treding audio/IVE_-_REBEL_HEART_@BaseNaija.mp3" type="audio/mpeg">
+                    </audio>
+                    <div class="trending-badge">#11</div>
+                </div>
+                <div class="music-info">
+                    <h3 class="music-title">REBEL HEART</h3>
+                    <p class="music-artist">IVE</p>
+                    <div class="music-stats">
+                        <span class="stat">🔥 551M plays</span>
+                        <span class="stat">⭐ 4.0</span>
+                    </div>
+                </div>
+                <div class="music-controls">
+                    <input type="range" min="0" max="100" value="50" class="volume-slider progress-slider ">
+                    <button class="info-btn" data-song="11"> Info</button>
+                    <button class="lyrics-btn" data-song="11"> Lyrics</button>
+                    <button class="download-btn-music download-btn" data-audio="assets/treding audio/IVE_-_REBEL_HEART_@BaseNaija.mp3">⬇ Download</button>
+                </div>
+            </div>
+
+                <!-- Song 12 -->
+            <div class="music-card hidden-song scroll-reveal-left">
+                <div class="music-cover-wrapper">
+                    <img src="assets/trending/blue.jpg" alt="Song Cover" class="music-cover">
+                    <div class="play-overlay">
+                        <button class="play-btn">▶</button>
+                    </div>
+                    <audio class="music-audio">
+                        <source src="./assets/treding audio/Blue.mp3" type="audio/mpeg">
+                    </audio>
+                    <div class="trending-badge">#12</div>
+                </div>
+                <div class="music-info">
+                    <h3 class="music-title">Blue</h3>
+                    <p class="music-artist">Yung Kai</p>
+                    <div class="music-stats">
+                        <span class="stat">🔥 500M plays</span>
+                        <span class="stat">⭐ 4.8</span>
+                    </div>
+                </div>
+                <div class="music-controls">
+                    <input type="range" min="0" max="100" value="50" class="volume-slider progress-slider ">
+                    <button class="info-btn" data-song="12">Info</button>
+                    <button class="lyrics-btn" data-song="12"> Lyrics</button>
+                    <button class="download-btn-music download-btn" data-audio="assets/treding audio/Blue.mp3">⬇ Download</button>
+                </div>
+            </div>
+
+        </div>
+       </div>
+
+        <!-- See More Button -->
+        <div class="see-more-container">
+            <button class="see-more-btn" id="seeMoreBtn">
+                <span>See More Trending Music</span>
+                <span class="arrow">↓</span>
+            </button>
+        </div>
+    </div>
+</section>
+
+<!-- Info Modal -->
+<div class="info-modal" id="infoModal">
+    <div class="modal-content-info">
+        <button class="modal-close" id="closeInfoModal">✕</button>
+        <h2 class="modal-title">Song Information</h2>
+        <div class="modal-body" id="infoModalBody">
+            <!-- Info content is inserted here by JavaScript -->
+            <div class="info-section">
+                <h3>Title:</h3>
+                <p id="infoTitle">Song Title</p>
+            </div>
+            <div class="info-section">
+                <h3>Artist:</h3>
+                <p id="infoArtist">Artist Name</p>
+            </div>
+            <div class="info-section">
+                <h3>Album:</h3>
+                <p id="infoAlbum">Album Name</p>
+            </div>
+            <div class="info-section">
+                <h3>Release Date:</h3>
+                <p id="infoDate">2024</p>
+            </div>
+            <div class="info-section">
+                <h3>Genre:</h3>
+                <p id="infoGenre">Hip-Hop/Rap</p>
+            </div>
+            <div class="info-section">
+                <h3>Duration:</h3>
+                <p id="infoDuration">3:45</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Lyrics Modal -->
+<div class="lyrics-modal" id="lyricsModal">
+    <div class="modal-content-lyrics">
+        <button class="modal-close" id="closeLyricsModal">✕</button>
+        <h2 class="modal-title">Lyrics</h2>
+        <div class="modal-body lyrics-body" id="lyricsModalBody">
+            <!-- LYRICS  FOR EACH SONG -->
+            <p class="lyrics-text">
+                Lyrics will be displayed here...
+                <br><br>
+                You can add the full lyrics for each song here.
+                <br><br>
+                Each verse separated by line breaks.
+            </p>
+        </div>
+    </div>
+</div>
+</section>
+
+
+<section id="artistPage">
+    <!-- ARTISTS SECTION -->
+<section class="artists-section" id="artists">
+    <div class="artists-container">
+        <!-- Back Button (Hidden by default) -->
+        <button class="back-to-artists" id="backToArtists">
+            <span class="back-arrow">←</span>
+            <span>Back to Artists</span>
+        </button>
+
+        <!-- Section Header -->
+        <div class="artists-header" id="artistsHeader">
+            <h2 class="section-title-main">🎙️ Artists</h2>
+            <p class="section-subtitle">Discover music from your favorite artists</p>
+        </div>
+
+        <!-- Artists Grid -->
+        <div class="artists-grid" id="artistsGrid">
+            <!-- Artist 1: J.cole -->
+            <div class="artist-card" data-artist="jcole">
+                <div class="artist-image-container">
+                    
+                    <img src="./assets/artist img/J_ Cole Net worth 2023.jpg" alt="J.Cole" class="artist-image">
+                    <div class="artist-overlay">
+                        <span class="view-songs-text">View Songs</span>
+                    </div>
+                </div>
+                <div class="artist-info">
+                    <h3 class="artist-name">J.Cole</h3>
+                    <p class="artist-songs-count">6 Songs</p>
+                </div>
+            </div>
+
+            <!-- Artist 2: Drake -->
+            <div class="artist-card" data-artist="drake">
+                <div class="artist-image-container">
+                    
+                    <img src="./assets/artist img/drake img.jpg" alt="Drake" class="artist-image">
+                    <div class="artist-overlay">
+                        <span class="view-songs-text">View Songs</span>
+                    </div>
+                </div>
+                <div class="artist-info">
+                    <h3 class="artist-name">Drake</h3>
+                    <p class="artist-songs-count">6 Songs</p>
+                </div>
+            </div>
+
+            <!-- Artist 3: Juice WRLD -->
+            <div class="artist-card" data-artist="juicewrld">
+                <div class="artist-image-container">
+                   
+                    <img src="./assets/artist img/download.jpg" alt="Juice WRLD" class="artist-image">
+                    <div class="artist-overlay">
+                        <span class="view-songs-text">View Songs</span>
+                    </div>
+                </div>
+                <div class="artist-info">
+                    <h3 class="artist-name">Juice WRLD</h3>
+                    <p class="artist-songs-count">6 Songs</p>
+                </div>
+            </div>
+
+            <!-- Artist 4: Wizkid -->
+            <div class="artist-card" data-artist="wizkid">
+                <div class="artist-image-container">
+                    
+                    <img src="./assets/artist img/Wizkid.jpg" alt="Wizkid" class="artist-image">
+                    <div class="artist-overlay">
+                        <span class="view-songs-text">View Songs</span>
+                    </div>
+                </div>
+                <div class="artist-info">
+                    <h3 class="artist-name">Wizkid</h3>
+                    <p class="artist-songs-count">4 Songs</p>
+                </div>
+            </div>
+
+            <!-- Artist 5: Asake -->
+            <div class="artist-card" data-artist="asake">
+                <div class="artist-image-container">
+                    
+                    <img src="./assets/artist img/asake.jpg" alt="ASAKE" class="artist-image">
+                    <div class="artist-overlay">
+                        <span class="view-songs-text">View Songs</span>
+                    </div>
+                </div>
+                <div class="artist-info">
+                    <h3 class="artist-name">Asake</h3>
+                    <p class="artist-songs-count">6 Songs</p>
+                </div>
+            </div>
+
+            <!-- Artist 6: Centralcee -->
+            <div class="artist-card" data-artist="centralcee">
+                <div class="artist-image-container">
+                    
+                    <img src="./assets/artist img/central cee 𝜗𝜚.jpg" alt="Centralcee" class="artist-image">
+                    <div class="artist-overlay">
+                        <span class="view-songs-text">View Songs</span>
+                    </div>
+                </div>
+                <div class="artist-info">
+                    <h3 class="artist-name">Centralcee</h3>
+                    <p class="artist-songs-count">5 Songs</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Songs List (Hidden by default) -->
+        <div class="songs-list-container" id="songsListContainer">
+            <h3 class="current-artist-name" id="currentArtistName"></h3>
+            <div class="songs-list" id="songsList">
+                <!-- Songs is dynamically inserted here -->
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+
+
+
+
+<!-- Fixed Bottom Player -->
+<div class="music-player" id="musicPlayer">
+    <div class="player-content">
+        <div class="player-song-info">
+            <div class="player-song-cover">
+                
+                <img src="./assets/trending/trend.jpg" alt="Song Cover" id="playerCover" class="player-cover-img">
+            </div>
+            <div class="player-text-info">
+                <h4 class="player-song-title" id="playerSongTitle">Song title</h4>
+                <p class="player-artist-name" id="playerArtistName">Artist name</p>
+            </div>
+        </div>
+
+        <div class="player-controls">
+            <button class="player-btn prev-btn" id="prevBtn">
+                <span>⏮</span>
+            </button>
+            <button class="player-btn play-pause-btn" id="playPauseBtn">
+                <span id="playPauseIcon">▶</span>
+            </button>
+            <button class="player-btn next-btn" id="nextBtn">
+                <span>⏭</span>
+            </button>
+        </div>
+
+        <div class="player-progress-section">
+            <span class="player-time" id="currentTime">0:00</span>
+            <input type="range" class="player-progress" id="playerProgress" min="0" max="100" value="0">
+            <span class="player-time" id="totalTime">0:00</span>
+        </div>
+
+        <div class="player-actions">
+            <button class="player-action-btn" id="playerDownloadBtn">
+                <span>⬇</span>
+            </button>
+            <button class="player-action-btn" id="closePlayerBtn">
+                <span>✕</span>
+            </button>
+        </div>
+    </div>
+</div>
+
+<!-- Lyrics Modal -->
+<div class="lyrics-modal-artist" id="lyricsModalArtist">
+    <div class="lyrics-modal-content-artist">
+        <button class="lyrics-close-btn" id="closeLyricsArtist">✕</button>
+        <h2 class="lyrics-modal-title" id="lyricsModalTitle">Song Lyrics</h2>
+        <div class="lyrics-modal-body" id="lyricsModalBody">
+            <!-- LYRICS is DISPLAYED HERE -->
+            <p class="lyrics-text" id="lyricsText">
+                Lyrics will appear here...
+            </p>
+        </div>
+    </div>
+</div>
+
+<!-- Hidden Audio Element -->
+<audio id="audioPlayer" preload="metadata"></audio>
+</section>
+
+
+<div class="browse-news-container" id="newsPage">
+        <div class="browse-header">
+            <h1>Artist News Feed</h1>
+            <p>Stay updated with the latest from your favorite artists</p>
+        </div>
+
+        <div class="browse-feed" id="browseFeed">
+            <!-- News posts are generated by JavaScript -->
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- Website Footer -->
+<footer class="site-footer">
+    <div class="footer-container">
+        <!-- Footer Top Section -->
+        <div class="footer-top">
+            <!-- Logo Section -->
+            <div class="footer-logo-section">
+                <div class="footer-logo">
+                    <span class="footer-logo-icon">♫♪</span>
+                    <span class="footer-logo-text">MR6IX HUB</span>
+                </div>
+                <p class="footer-tagline">Your ultimate music destination</p>
+            </div>
+
+            <!-- Quick Links -->
+            <div class="footer-links-section">
+                <h3 class="footer-heading">Quick Links</h3>
+                <nav class="footer-nav">
+                    <ul class="footer-menu">
+                        <li><a href="#homePage" class="footer-link">Home</a></li>
+                        <li><a href="#newsPage" class="footer-link">News</a></li>
+                        <li><a href="#trendingPage" class="footer-link">Trending</a></li>
+                        <li><a href="#artistPage" class="footer-link">Artist</a></li>
+                    </ul>
+                </nav>
+            </div>
+
+            <!-- Social Media -->
+            <div class="footer-social-section">
+                <h3 class="footer-heading">Follow Us</h3>
+                <div class="footer-social-links">
+                    <a href="#" class="footer-social-link" aria-label="Facebook">
+                        <img src="./assets/img/facebook.png" alt="Facebook" class="social-icon"/>
+                    </a>
+                    <a href="#" class="footer-social-link" aria-label="Instagram">
+                                    <img src="./assets/img/instagram.png" alt="Instagram" class="social-icon" />
+                    </a>
+                    <a href="#" class="footer-social-link" aria-label="whatsapp">
+                        <img src="./assets/img/whatsapp.png" alt="Twitter" class="social-icon" />
+                    </a>
+                    <a href="#" class="footer-social-link" aria-label="YouTube">
+                                    <img src="./assets/img/youtube.jpg" alt="YouTube" class="social-icon" />
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Footer Bottom Section -->
+        <div class="footer-bottom">
+            <p class="footer-copyright">© 2025 MR6IX HUB. All rights reserved.</p>
+        </div>
+    </div>
+</footer>
+
+
+    <script src="./script.js"></script>
+</body>
+</html>

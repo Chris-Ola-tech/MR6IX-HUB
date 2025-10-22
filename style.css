@@ -34,11 +34,12 @@ body {
 
 .logo {
   background: linear-gradient(to right, #ff007f, #6a00ff);
-  background-clip: text;
+  -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   font-size: 2rem;
   font-weight: bold;
   margin: 0;
+  display: inline-block;
 }
 
 /* === SEARCH DESKTOP === */
@@ -1054,11 +1055,12 @@ body {
   font-size: clamp(2.5rem, 6vw, 5rem);
   font-weight: 800;
   background: linear-gradient(135deg, #ffffff, #ff007f, #6a00ff);
-  background-clip: text;
+  -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   margin-bottom: 20px;
   animation: slideDown 1s ease;
   letter-spacing: -2px;
+  display: inline-block;
 }
 
 @keyframes slideDown {
@@ -1283,7 +1285,7 @@ body {
   font-size: 2.5rem;
   font-weight: 800;
   background: linear-gradient(135deg, #ff007f, #6a00ff);
-  background-clip: text;
+  -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   margin-bottom: 5px;
 }
@@ -1404,7 +1406,7 @@ body {
   font-size: clamp(2.5rem, 5vw, 4rem);
   font-weight: 800;
   background: linear-gradient(135deg, #ff007f, #6a00ff);
-  background-clip: text;
+  -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   margin-bottom: 15px;
 }
@@ -1738,7 +1740,7 @@ body {
   font-size: 2rem;
   font-weight: 700;
   background: linear-gradient(135deg, #ff007f, #6a00ff);
-  background-clip: text;
+  -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   margin-bottom: 30px;
 }
@@ -2039,7 +2041,7 @@ body {
   font-weight: 800;
   margin-bottom: 30px;
   background: linear-gradient(135deg, #ff007f, #6a00ff);
-  background-clip: text;
+  -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 
@@ -2390,7 +2392,7 @@ body {
   font-size: 2rem;
   font-weight: 700;
   background: linear-gradient(135deg, #ff007f, #6a00ff);
-  background-clip: text;
+  -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   margin-bottom: 25px;
 }
@@ -2509,7 +2511,7 @@ body {
 .browse-header h1 {
     font-size: 2.5rem;
     background: linear-gradient(135deg, #ff00ff 0%, #e91e63 100%);
-    background-clip: text;
+    -webkit-background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     margin-bottom: 10px;
@@ -2867,7 +2869,7 @@ body {
 
 .footer-logo-text {
     background: linear-gradient(135deg, #ff00ff 0%, #e91e63 100%);
-    background-clip: text;
+    -webkit-background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }

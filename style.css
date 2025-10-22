@@ -156,20 +156,7 @@ body {
   border: none;
 }
 
-/* === RESPONSIVENESS === */
-@media (max-width: 1024px) {
-  /* Tablet view */
-  .header-wrapper {
-    gap: 40px;
-    flex-wrap: wrap;
-  }
-  .search {
-    flex: 1;
-  }
-  .search-icon {
-    width: 250px;
-  }
-}
+
 
 @media (max-width: 768px) {
   /* Mobile view */
@@ -516,10 +503,6 @@ body {
 
 /* === NOTIFICATION DROPDOWN RESPONSIVE === */
 
-/* For the body to have proper spacing when header is fixed */
-body {
-  padding-top: 100px; /* Adjust based on your header height */
-}
 
 /* Desktop and Large tablets */
 @media (min-width: 769px) {

@@ -1472,7 +1472,7 @@ playButtons.forEach(btn => {
     // Toggle play / pause
     if (audio.paused) {
       audio.play();
-      btn.textContent = '⏸';
+      btn.textContent = '❚❚';
 
       // Update slider as music plays
       audio.addEventListener('timeupdate', () => {
@@ -4245,7 +4245,7 @@ audioPlayer.play();
     // Play audio
     audioPlayer.play();
     isPlaying = true;
-    playPauseIcon.textContent = '⏸';
+    playPauseIcon.textContent = '❚❚';
     
     // Show player
     musicPlayer.classList.add('show');
@@ -4261,7 +4261,7 @@ audioPlayer.play();
       } else {
         audioPlayer.play();
         isPlaying = true;
-        playPauseIcon.textContent = '⏸';
+        playPauseIcon.textContent = '❚❚';
       }
     });
   }
@@ -4587,7 +4587,7 @@ audioPlayer.play();
   // Play audio
   audioPlayer.play();
   isPlaying = true;
-  playPauseIcon.textContent = '⏸';
+  playPauseIcon.textContent = '❚❚';
   
   // Show player
   musicPlayer.classList.add('show');
@@ -4602,7 +4602,7 @@ playPauseBtn.addEventListener('click', () => {
   } else {
     audioPlayer.play();
     isPlaying = true;
-    playPauseIcon.textContent = '⏸';
+    playPauseIcon.textContent = '❚❚';
   }
 });
 
